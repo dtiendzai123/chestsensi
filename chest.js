@@ -128,7 +128,7 @@ class PredictiveKalmanFilter {
 class TargetTracker {
   constructor() {
     this.targets = new Map();
-    this.maxTargets = 10;
+    this.maxTargets = 999;
     this.targetTimeout = 2000;
   }
 
@@ -217,7 +217,7 @@ class TargetTracker {
 const BONE_CONFIGS = {
   head: {
     position: new Vector3(-0.0456970781, -0.004478302, -0.0200432576),
-    hitbox: 0.08,
+    hitbox: 1.0,
     priority: 100,
     damageMultiplier: 2.5,
     bindpose: {
