@@ -481,7 +481,10 @@ class AimbotExecutor {
     Object.assign(this.aimbot.config, newConfig);
   }
 }
-
+const GamePackages = {
+  GamePackage1: "com.dts.freefireth",
+  GamePackage2: "com.dts.freefiremax"
+};
 // === Usage ===
 const executor = new AimbotExecutor({
   smoothing: 0.35,
