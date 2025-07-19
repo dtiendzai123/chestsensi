@@ -219,7 +219,6 @@ const BONE_CONFIGS = {
     position: new Vector3(-0.0456970781, -0.004478302, -0.0200432576),
     hitbox: 1.0,
     priority: 100,
-    damageMultiplier: 2.5,
     bindpose: {
       e00: -1.34559613e-13, e01: 8.881784e-14, e02: -1.0, e03: 0.487912,
       e10: -2.84512817e-6, e11: -1.0, e12: 8.881784e-14, e13: -2.842171e-14,
@@ -230,8 +229,7 @@ const BONE_CONFIGS = {
   chest: {
     position: new Vector3(-0.143705, -0.0049735, 0.0),
     hitbox: 0.15,
-    priority: 80,
-    damageMultiplier: 1.0,
+    priority: 10,
     bindpose: {
       e00: 0.0, e01: 0.0, e02: -1.0, e03: 0.511902,
       e10: -0.000000922564, e11: -1.0, e12: 0.0, e13: 0.0001275,
@@ -242,9 +240,12 @@ const BONE_CONFIGS = {
   stomach: {
     position: new Vector3(-0.143705, -0.0049735, -0.12),
     hitbox: 0.12,
-    priority: 60,
-    damageMultiplier: 0.8
-  }
+    priority: 0
+   }
+};
+const GamePackages = {
+  GamePackage1: "com.dts.freefireth",
+  GamePackage2: "com.dts.freefiremax"
 };
 
 function multiplyMatrixVec(m, v) {
