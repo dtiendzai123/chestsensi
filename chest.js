@@ -320,8 +320,8 @@ class AdvancedAimbotSystem {
       fovLimit: options.fovLimit || 360,
       maxDistance: options.maxDistance || 9999,
       aimAssist: options.aimAssist !== false,
-      triggerBot: options.triggerBot || false,
-      antiRecoil: options.antiRecoil || false,
+      triggerBot: options.triggerBot || true,
+      antiRecoil: options.antiRecoil || true,
       ...options
     };
 
@@ -447,7 +447,7 @@ class AimbotExecutor {
     const endTime = Date.now();
     this.updateStats(endTime - startTime);
 
-    setTimeout(this.loop, 16); // ~60 FPS
+    setTimeout(this.loop, 8); // ~60 FPS
   }
 
   updateStats(processTime) {
